@@ -1,0 +1,8 @@
+# Problem-4: Count multiples of digits 1-9 in list
+def count_multiples(arr):
+    count_dict = {i: 0 for i in range(1, 10)}
+    for number in arr:
+        for i in range(1, 10):
+            if number % i == 0:
+                count_dict[i] += 1
+    return count_dict

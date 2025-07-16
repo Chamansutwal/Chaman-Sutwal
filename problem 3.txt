@@ -1,0 +1,12 @@
+# Problem-3: Generate series with condition
+def custom_series(n):
+    count = 0
+    num = 1
+    result = []
+    limit = n if n % 2 != 0 else n - 1
+
+    while count < limit:
+        result.append(num)
+        num += 2
+        count += 1
+    return result
